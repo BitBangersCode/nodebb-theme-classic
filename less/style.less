@@ -4,7 +4,7 @@
 @import "./custom";
 
 body {
-	background:#DBDBDB;
+	background: #2A2C2B;
 }
 
 .loading-bar {
@@ -23,7 +23,7 @@ body {
 }
 
 .admin {
-	background: white;
+	background: #2A2C2B;
 
 	.panel[data-widget] {
 		border-top: 0;
@@ -49,6 +49,11 @@ body {
 	span {
 		height:25px;
 	}
+}
+
+.header .forum-logo {
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 
@@ -112,14 +117,16 @@ body {
 
 	 	.category-box {
 	 		position: relative;
-	 		background: #FFF;
+	 		background: #1E1E20;
 	 		min-height: 30px;
 	 		display: block;
-	 		border: 1px solid rgba(0, 0, 0, 0.25);
+	 		border: 0px solid rgba(0, 0, 0, 0.25);
 	 		box-shadow: 0 0px 2px rgba(0, 0, 0, 0.1);
 	 		-webkit-box-shadow: 0 0px 2px rgba(0, 0, 0, 0.1);
 	 		padding-bottom: 5px; border-radius: 3px;
 	 		-webkit-border-radius: 3px; overflow: hidden;
+	 		border-top-width: 3px;
+			border-top-color: #dc3522;
 
 			@media (min-width: @screen-md-min) {
 
@@ -128,13 +135,13 @@ body {
 	 		min-height: 30px;
 
 	 		.category-info {
-	 			background: #f7f7f7;
+	 			background: #1E1E20;
 	 			padding:10px;
-	 			border-bottom: 1px solid #e9e9e9;
+	 			border-bottom: 1px solid rgba(0,0,0,.25);
 	 		
 	 			.description {
 	 				font-size: 16px;
-	 				color: rgba(0,0,0,0.8);
+	 				color: color: #D9CB9E;
 	 			}
 
 	 		}
@@ -182,14 +189,15 @@ body {
 	 		}
 
 	 		.user-img {
-				width: 24px;
-				height: 24px;
+				width: 15px;
+				height: 15px;
 				margin-right: 5px;
 				border-radius: 50%;
 	 		}
 
 			.post-preview-content {
-				color: rgba(0, 0, 0, 0.4);
+				color: #D9CB9E;
+				font-size: 10px;
 				.content {
 					max-height: 250px;
 					overflow: hidden;
@@ -202,6 +210,9 @@ body {
 					blockquote {
 						border-left-width: 3px;
 					}
+				}
+				a {
+					color: #DC3522;
 				}
 			}
 
@@ -219,10 +230,6 @@ body {
 	.category .recent-replies ul li span {
 		margin-bottom: 20px;
 	}
-}
-
-.breadcrumb {
-	background-color: white;
 }
 
 .profile-image {
@@ -273,7 +280,7 @@ body {
 	}
 
 	.category-item {
-		background-color:#fff;
+		background-color:#1E1E20;
 		-webkit-box-shadow: inset 0px 0px 2px 2px #ffffff;
 		box-shadow: inset 0px 0px 2px 2px #ffffff;
 		-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.3);
@@ -358,7 +365,7 @@ body {
 	}
 
 	.post-bar, .post-row {
-		background-color:#fff;
+		background-color: #1E1E20;
 		-webkit-box-shadow: inset 0px 0px 2px 2px #ffffff;
 		box-shadow: inset 0px 0px 2px 2px #ffffff;
 		-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.3);
