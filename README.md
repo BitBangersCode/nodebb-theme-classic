@@ -12,10 +12,9 @@ A classic theme for NodeBB. For those who want a more traditional feel to their 
 
 ## Installation
 
-    npm install nodebb-theme-classic
+    git clone into your nodebb_modules directory.
 
 
 ## Credits
 
-variables.less modified from "White Plum" by [divshot](https://github.com/divshot/)
-Much credit to Trevor who helped with the project.
+Credits to the original theme creator [Paaltomo](https://github.com/Paaltomo/nodebb-theme-classic)
