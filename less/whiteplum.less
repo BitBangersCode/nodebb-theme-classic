@@ -9,7 +9,6 @@
  * https://github.com/divshot/themestrap
  */
 
-
 @import url(//fonts.googleapis.com/css?family=Raleway:100,300,700,900,500);
 
 .box-shadow(@style) {
@@ -58,29 +57,6 @@ h1 small, .h1 small {
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover {
   border-top: 2px solid @brand-primary;
 }
-.nav > li > a:focus{
-  color: #FFF;
-}
-
-// ---- Navbar
-
-.navbar {
-  .box-shadow(0px 1px 6px rgba(0,0,0,0.15));
-}
-
-.navbar-static-top, .navbar-fixed-top {
-  // border-top: 2px solid @brand-primary;
-  .box-shadow(0px -3px 12px rgba(0,0,0,0.5));
-}
-
-.navbar-fixed-bottom {
-  border-bottom: 2px solid @brand-primary;
-  .box-shadow(0px 3px 12px rgba(0,0,0,0.5));
-}
-
-.container>.navbar-header {
-  margin-right: 5px;
-}
 
 // ---- Buttons
 
@@ -113,18 +89,12 @@ h1 small, .h1 small {
 // ---- Panels
 
 .panel {
-  border-width: 0;
-  border-top-width: 3px;
-  .box-shadow(0 1px 10px rgba(0,0,0,0.15));
-}
-
-.panel-default {
-  border-top-color: @brand-primary;
+  border: 1px solid #e2e2e2;
 }
 
 .panel-heading {
-  background: transparent;
-  border-bottom-color: @gray-lighter;
+  background: #FFF!important;
+  border-bottom: 1px solid #e2e2e2;
 }
 
 .panel-footer {
