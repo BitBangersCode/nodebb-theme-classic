@@ -7,7 +7,7 @@ A classic theme for NodeBB. For those who want a more traditional feel to their 
 ## Screenshot
 
 
-[![Home View](https://i.imgur.com/mn8XP46.jpg)](http://i.imgur.com/qqLrVTO.jpg)
+[![Home View](http://i.imgur.com/QpPhcoM.png)](http://i.imgur.com/QpPhcoM.png)
 
 
 ## Installation
