@@ -12,6 +12,13 @@
 	<script>
 		var RELATIVE_PATH = "{relative_path}";
 	</script>
+	
+	<script>
+		var RELATIVE_PATH = "{relative_path}";
+		var config = JSON.parse('{configJSON}');
+		var app = {};
+		app.user = JSON.parse('{userJSON}');
+	</script>
 	<script src="{relative_path}/socket.io/socket.io.js"></script>
 	<script src="{relative_path}/nodebb.min.js?{cache-buster}"></script>
 	<script>
