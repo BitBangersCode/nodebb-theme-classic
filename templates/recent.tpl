@@ -1,18 +1,18 @@
 <div class="recent">
 	<ol class="breadcrumb">
-		<li><a href="{relative_path}/">[[global:home]]</a></li>
-		<li class="active">[[recent:title]] <a href="{relative_path}/recent.rss"><i class="fa fa-rss-square"></i></a></li>
+		<li><a href="{config.relative_path}/">[[global:home]]</a></li>
+		<li class="active">[[recent:title]] <a href="{config.relative_path}/recent.rss"><i class="fa fa-rss-square"></i></a></li>
 	</ol>
 
 	<ul class="nav nav-pills">
-		<li class=''><a href='{relative_path}/recent/day'>[[recent:day]]</a></li>
-		<li class=''><a href='{relative_path}/recent/week'>[[recent:week]]</a></li>
-		<li class=''><a href='{relative_path}/recent/month'>[[recent:month]]</a></li>
+		<li class=''><a href='{config.relative_path}/recent/day'>[[recent:day]]</a></li>
+		<li class=''><a href='{config.relative_path}/recent/week'>[[recent:week]]</a></li>
+		<li class=''><a href='{config.relative_path}/recent/month'>[[recent:month]]</a></li>
 	</ul>
 
 	<br />
 
-	<a href="{relative_path}/recent">
+	<a href="{config.relative_path}/recent">
 		<div class="alert alert-warning hide" id="new-topics-alert"></div>
 	</a>
 

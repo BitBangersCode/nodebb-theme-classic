@@ -14,13 +14,13 @@
 <div class="topic">
 	<ol class="breadcrumb">
 		<li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
-			<a href="{relative_path}/" itemprop="url"><span itemprop="title">[[global:home]]</span></a>
+			<a href="{config.relative_path}/" itemprop="url"><span itemprop="title">[[global:home]]</span></a>
 		</li>
 		<li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
-			<a href="{relative_path}/category/{category.slug}" itemprop="url"><span itemprop="title">{category.name}</span></a>
+			<a href="{config.relative_path}/category/{category.slug}" itemprop="url"><span itemprop="title">{category.name}</span></a>
 		</li>
 		<li class="active" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
-			<span itemprop="title">{title} <a target="_blank" href="{relative_path}/topic/{tid}.rss"><i class="fa fa-rss-square"></i></a></span>
+			<span itemprop="title">{title} <a target="_blank" href="{config.relative_path}/topic/{tid}.rss"><i class="fa fa-rss-square"></i></a></span>
 		</li>
 		<div class="loading-indicator pull-right" done="0" style="display:none;">
 			<i class="fa fa-refresh fa-spin"></i>
@@ -40,10 +40,10 @@
 						<div class="row">
 							<div class="col-md-12">
 								<div class="topic-profile-pic hidden-xs text-center">
-									<a href="<!-- IF posts.user.userslug -->{relative_path}/user/{posts.user.userslug}<!-- ELSE -->#<!-- ENDIF posts.user.userslug -->">
+									<a href="<!-- IF posts.user.userslug -->{config.relative_path}/user/{posts.user.userslug}<!-- ELSE -->#<!-- ENDIF posts.user.userslug -->">
 										<img src="{posts.user.picture}" alt="{posts.user.username}" class="profile-image user-img" title="{posts.user.username}">
 									</a>
-									<small class="username" title="{posts.user.username}"><a href="<!-- IF posts.user.userslug -->{relative_path}/user/{posts.user.userslug}<!-- ELSE -->#<!-- ENDIF posts.user.userslug -->">{posts.user.username}</a></small>
+									<small class="username" title="{posts.user.username}"><a href="<!-- IF posts.user.userslug -->{config.relative_path}/user/{posts.user.userslug}<!-- ELSE -->#<!-- ENDIF posts.user.userslug -->">{posts.user.username}</a></small>
 
 									<!-- IF posts.user.groups.length -->
 									<div class="text-center">
@@ -78,7 +78,7 @@
 										<!-- ENDIF posts.user.userslug -->
 										<span class="username-field" data-username="{posts.user.username}">
 											<!-- IF posts.user.userslug -->
-											[[global:user_posted_ago, <a href="{relative_path}/user/{posts.user.userslug}" itemprop="author">{posts.user.username}</a>, <span class="timeago" title="{posts.relativeTime}"></span>]]
+											[[global:user_posted_ago, <a href="{config.relative_path}/user/{posts.user.userslug}" itemprop="author">{posts.user.username}</a>, <span class="timeago" title="{posts.relativeTime}"></span>]]
 											<!-- ELSE -->
 											[[global:guest_posted_ago, <span class="timeago" title="{posts.relativeTime}"></span>]]
 											<!-- ENDIF posts.user.userslug -->
@@ -86,7 +86,7 @@
 									</span>
 
 									<!-- IF posts.editor.username -->
-									<span>, [[global:last_edited_by_ago, <strong><a href="{relative_path}/user/{posts.editor.userslug}">{posts.editor.username}</a></strong>, <span class="timeago" title="{posts.relativeEditTime}"></span>]]</span>
+									<span>, [[global:last_edited_by_ago, <strong><a href="{config.relative_path}/user/{posts.editor.userslug}">{posts.editor.username}</a></strong>, <span class="timeago" title="{posts.relativeEditTime}"></span>]]</span>
 									<!-- ENDIF posts.editor.username -->
 								</small>
 

@@ -6,10 +6,10 @@
 
 <ol class="breadcrumb">
 	<li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
-		<a href="{relative_path}/" itemprop="url"><span itemprop="title">[[global:home]]</span></a>
+		<a href="{config.relative_path}/" itemprop="url"><span itemprop="title">[[global:home]]</span></a>
 	</li>
 	<li class="active" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
-		<span itemprop="title">{name} <a target="_blank" href="{relative_path}/category/{cid}.rss"><i class="fa fa-rss-square"></i></a></span>
+		<span itemprop="title">{name} <a target="_blank" href="{config.relative_path}/category/{cid}.rss"><i class="fa fa-rss-square"></i></a></span>
 	</li>
 </ol>
 
@@ -59,7 +59,7 @@
 							<!-- ENDIF privileges.editable -->
 
 							<div class="category-profile-pic">
-								<a href="<!-- IF topics.user.userslug -->{relative_path}/user/{topics.user.userslug}<!-- ELSE -->#<!-- ENDIF topics.user.userslug -->">
+								<a href="<!-- IF topics.user.userslug -->{config.relative_path}/user/{topics.user.userslug}<!-- ELSE -->#<!-- ENDIF topics.user.userslug -->">
 									<!-- IF topics.thumb -->
 									<img src="{topics.thumb}" alt="{topics.title}" class="profile-image user-img" title="{topics.title}">
 									<!-- ELSE -->
@@ -69,7 +69,7 @@
 							</div>
 							<div class="category-text">
 								<p><strong><i class="fa fa-thumb-tack<!-- IF !topics.pinned --> hide<!-- ENDIF !topics.pinned -->"></i> <i class="fa fa-lock<!-- IF !topics.locked --> hide<!-- ENDIF !topics.locked -->"></i></strong>
-									<a href="{relative_path}/topic/{topics.slug}" itemprop="url" class="topic-title">{topics.title}</a><br />
+									<a href="{config.relative_path}/topic/{topics.slug}" itemprop="url" class="topic-title">{topics.title}</a><br />
 									<small>
 
 									<!-- IF topics.user.userslug -->
@@ -95,8 +95,8 @@
 							<!-- IF topics.unreplied -->
 							<p class="no-replies">[[category:no_replies]]</p>
 							<!-- ELSE -->
-							<a href="<!-- IF topics.teaser.user.userslug -->{relative_path}/user/{topics.teaser.user.userslug}<!-- ELSE -->#<!-- ENDIF topics.teaser.user.userslug -->"><img class="profile-image small user-img" src="{topics.teaser.user.picture}" title="{topics.teaser.user.username}" /></a>
-							<a href="{relative_path}/topic/{topics.slug}/{topics.teaser.index}">
+							<a href="<!-- IF topics.teaser.user.userslug -->{config.relative_path}/user/{topics.teaser.user.userslug}<!-- ELSE -->#<!-- ENDIF topics.teaser.user.userslug -->"><img class="profile-image small user-img" src="{topics.teaser.user.picture}" title="{topics.teaser.user.username}" /></a>
+							<a href="{config.relative_path}/topic/{topics.slug}/{topics.teaser.index}">
 								[[global:replied_ago, <span class="timeago" title="{topics.teaser.timestamp}"></span>]]
 							</a>
 							<!-- ENDIF topics.unreplied -->

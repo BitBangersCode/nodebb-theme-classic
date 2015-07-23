@@ -16,7 +16,7 @@
 					<!-- IF categories.link -->
 					<a href="{categories.link}" itemprop="url" target="_blank">
 					<!-- ELSE -->
-					<a href="{relative_path}/category/{categories.slug}" itemprop="url">
+					<a href="{config.relative_path}/category/{categories.slug}" itemprop="url">
 					<!-- ENDIF categories.link -->
 
 					</a>
@@ -28,7 +28,7 @@
 							<!-- IF categories.link -->
 							<a href="{categories.link}" itemprop="url" target="_blank">
 							<!-- ELSE -->
-							<a href="{relative_path}/category/{categories.slug}" itemprop="url">
+							<a href="{config.relative_path}/category/{categories.slug}" itemprop="url">
 							<!-- ENDIF categories.link-->
 								<h4><!-- IF categories.icon --><i class="fa {categories.icon}"></i> <!-- ENDIF categories.icon -->{categories.name}</h4>
 							</a>
@@ -45,8 +45,8 @@
 							<div class="post-preview-content">
 								<span class="pull-right">
 								Last post by
-									<a href="<!-- IF categories.posts.user.userslug -->{relative_path}/user/{categories.posts.user.userslug}<!-- ELSE -->#<!-- ENDIF categories.posts.user.userslug-->">
-									<img src="{categories.posts.user.picture}" title="{categories.posts.user.username}" class="pull-left user-img" /> {categories.posts.user.username}</a> in <a href="{relative_path}/topic/{categories.posts.topic.slug}<!-- IF categories.posts.index -->/{categories.posts.index}<!-- ENDIF categories.posts.index -->">{categories.posts.topic.title}</a> <span class="timeago" title="{categories.posts.relativeTime}"></span></span>
+									<a href="<!-- IF categories.posts.user.userslug -->{config.relative_path}/user/{categories.posts.user.userslug}<!-- ELSE -->#<!-- ENDIF categories.posts.user.userslug-->">
+									<img src="{categories.posts.user.picture}" title="{categories.posts.user.username}" class="pull-left user-img" /> {categories.posts.user.username}</a> in <a href="{config.relative_path}/topic/{categories.posts.topic.slug}<!-- IF categories.posts.index -->/{categories.posts.index}<!-- ENDIF categories.posts.index -->">{categories.posts.topic.title}</a> <span class="timeago" title="{categories.posts.relativeTime}"></span></span>
 							</div>
 						</div>
 						<!-- END posts -->
